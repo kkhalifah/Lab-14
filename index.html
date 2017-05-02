@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cat Dog</title>
+    <style media="screen">
+      img{
+        width: 700px;
+      }
+    </style>
+</head>
+<body ng-app="megaApp">
+    <nav>
+        <!-- The hrefs here change the #hash part of the URL.
+             They match with the $routeProvider.when items. -->
+        <a href="#!/cat">Click for the Cat</a>
+        <a href="#!/dog">Click for the Dog</a>
+    </nav>
+    <main>
+        <ng-view></ng-view>
+
+    </main>
+
+    <!-- Include our JS files. We have to include each one here,
+         starting with the module definition file. -->
+         <script src="lib/angular.min.js" charset="utf-8"></script>
+         <script src="lib/angular-route.min.js" charset="utf-8"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
